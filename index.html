@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Időzítések, eseménykezelések</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+
+        <h2>Intervallum</h2>
+        Az alábbi példa azt mutatja be, hogy miként lehet egy függvényt egy általunk meghatározott intervallumonként újra és újra meghívni.
+        <pre>
+            // DEKLARÁCIÓS RÉSZ
+
+            // konténer div
+            const timerBox = document.querySelector('main div.timer');
+            
+            // megjelenő idő induló értéke
+            let time = 0;
+
+            // Léptető és megjelenítő függvény
+            const timerFunction = () => {
+                timerBox.textContent = time;
+                time++;
+            }
+
+            // Intervallum beállítása - függvény hívás 1000 ms-onként
+            setInterval(timerFunction, 1000);
+        </pre>
+
+        <div class="timer">0</div>
+
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
