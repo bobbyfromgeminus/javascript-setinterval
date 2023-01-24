@@ -8,32 +8,38 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <main>
+    
+    <section>
+        <h2>Gyakorló feladat</h2>
+        <article>
+            <div>0</div>
+            <div>0</div>
+            <button class="green">Indít</button>
+            <button class="orange hide">Megállít</button>
+        </article>
+        <main>
+            <h3>1. feladat:</h3> Készíts 2 db számláló dobozt, valamint 2 db gombot!<br>
+            A kiinduló tartalom mindkét doboz esetében legyen 0!<br>
+            A gombok feliratai legyenek "Indít" és "Megállít"!
+            <br><br>
 
-        <h2>Intervallum</h2>
-        Az alábbi példa azt mutatja be, hogy miként lehet egy függvényt egy általunk meghatározott intervallumonként újra és újra meghívni.
-        <pre>
-            // DEKLARÁCIÓS RÉSZ
+            <h3>2. feladat:</h3> Készíts egy függvényt, amely az "Indít" feliratú gomb megnyomásával hívódik meg!<br>
+            A függvény mindkét számláló doboz tartalmát növelje egyel, mindezt tegye meg újra és újra 1 másodpercenként!
+            <br><br>
 
-            // konténer div
-            const timerBox = document.querySelector('main div.timer');
+            <h3>3. feladat:</h3> A "Megállít" gomb megnyomásakor az első számláló doboz tartalma továbbra is növekedjék, a második doboz tartalma viszont ne növekedjen tovább!<br>
+            A "Megállít" gomb újbóli megnyomásával újra mindkét doboz tartalma növekedjen!<br>
+            <br><br>
+
+            <h3>Bónusz feladatok:</h3> A "Megállít" gomb felirata változzon át "Folytat"-ra, újbóli megnyomást követően pedig ismét "Megállít"-ra!<br>
+            <b>1. bónusz:</b> Az "Indít" gomb megnyomásakor tünjön el a gomb!<br>
+            <b>2. bónusz:</b> A "Megállít" gomb alapértelmezetten ne legyen látható és csak az "Indít" gomb megnyomásakor jelenjen meg!<br>
+            <b>3. bónusz:</b> A "Megállít" gomb felirata változzon át "Folytat"-ra, újbóli megnyomást követően pedig ismét "Megállít"-ra!<br>
+            <b>4. bónusz:</b> A "Megállít/Folytat" gomb színe az állapotától függően legyen narancs, vagy zöld!<br>
             
-            // megjelenő idő induló értéke
-            let time = 0;
+        </main>
+    </section>
 
-            // Léptető és megjelenítő függvény
-            const timerFunction = () => {
-                timerBox.textContent = time;
-                time++;
-            }
-
-            // Intervallum beállítása - függvény hívás 1000 ms-onként
-            setInterval(timerFunction, 1000);
-        </pre>
-
-        <div class="timer">0</div>
-
-    </main>
 
     <script src="./assets/js/main.js"></script>
 </body>
